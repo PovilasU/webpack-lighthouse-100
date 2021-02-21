@@ -1,5 +1,5 @@
 // const ENDPOINT = 'https://jsonplaceholder.typicode.com/users/';
-
+/* webpackChunkName: "momentAPI" */ /* webpackPreload: true */ 'moment';
 export function getTest() {
   return console.log('TEST');
   // .then((response) => {
