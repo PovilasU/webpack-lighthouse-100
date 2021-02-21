@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 import './style.scss';
 
 import App from './App';
-import { getUsers } from './common/usersAPI';
+// import { getUsers } from './common/usersAPI';
 // import { getCar } from './common/MomentAPI';
 const getUserModule = () =>
   import(/* webpackChunkName: "usersAPI" */ './common/usersAPI');
