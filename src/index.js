@@ -11,7 +11,11 @@ const getUserModule = () =>
   import(/* webpackChunkName: "usersAPI" */ './common/usersAPI');
 // const getCarModule = () =>
 //   import(/* webpackChunkName: "getcar" */ './common/Car');
-import(/* webpackChunkName: "momentAPI" */ /* webpackPreload: true */ 'moment');
+const getMomentModule = () =>
+  import(/* webpackChunkName: "getTEST" */ './common/Car');
+//   import(
+
+//);
 
 const btn = document.getElementById('btn');
 
@@ -22,11 +26,10 @@ btn.addEventListener('click', () => {
 });
 const btnMoment = document.getElementById('btnMoment');
 
-// btnMoment.addEventListener('click', () => {
-//   getCarModule().then(({ getCar }) => {
-//     getCar('bilekas').then(() => console.log('test 123'));
-//   });
-//   //   import moment from 'moment';
-// });
+btnMoment.addEventListener('click', () => {
+  getMomentModule().then(({ getTest }) => {
+    getTest().then(() => console.log('test 12311'));
+  });
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));

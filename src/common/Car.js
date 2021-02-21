@@ -1,5 +1,10 @@
-import React from 'react';
+// const ENDPOINT = 'https://jsonplaceholder.typicode.com/users/';
 
-export function getCar(props) {
-  return <h1>Hello, {props.name}</h1>;
+export function getTest() {
+  return console.log('TEST');
+  // .then((response) => {
+  //   if (!response.ok) throw Error(response.statusText);
+  //   return response.json();
+  // })
+  // .then((json) => json);
 }
