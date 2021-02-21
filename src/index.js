@@ -11,14 +11,8 @@ const getUserModule = () =>
   import(/* webpackChunkName: "usersAPI" */ './common/usersAPI');
 // const getCarModule = () =>
 //   import(/* webpackChunkName: "getcar" */ './common/Car');
-const getMomentModule = () =>
-  import(/* webpackChunkName: "getTEST" */ './common/MomentAPI');
-//   import(
-//     /* webpackChunkName: "momentAPI" */ /* webpackPreload: true */ 'moment'
-//   );
-//   import(
-
-//);
+// const getMomentModule = () =>
+//   import(/* webpackChunkName: "getTEST" */ './common/MomentAPI');
 
 const btn = document.getElementById('btn');
 
@@ -27,12 +21,12 @@ btn.addEventListener('click', () => {
     getUsers().then((json) => console.log(json));
   });
 });
-const btnMoment = document.getElementById('btnMoment');
+// const btnMoment = document.getElementById('btnMoment');
 
-btnMoment.addEventListener('click', () => {
-  getMomentModule().then(({ getTest }) => {
-    getTest();
-  });
-});
+// btnMoment.addEventListener('click', () => {
+//   getMomentModule().then(({ getTest }) => {
+//     getTest();
+//   });
+// });
 
 ReactDOM.render(<App />, document.getElementById('root'));
