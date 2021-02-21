@@ -28,7 +28,7 @@ const btnMoment = document.getElementById('btnMoment');
 
 btnMoment.addEventListener('click', () => {
   getMomentModule().then(({ getTest }) => {
-    getTest().then(() => console.log('test 12311'));
+    getTest();
   });
 });
 
