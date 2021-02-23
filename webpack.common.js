@@ -7,6 +7,7 @@ const ROOT = __dirname;
 module.exports = {
   entry: {
     main: './src/index.js',
+    another: './src/another-module.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
