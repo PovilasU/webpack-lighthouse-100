@@ -14,8 +14,15 @@ async function getComponent() {
   return element;
 }
 
-getComponent().then((component) => {
-  document.body.appendChild(component);
+// getComponent().then((component) => {
+//   document.body.appendChild(component);
+// });
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', () => {
+  getComponent().then((component) => {
+    document.body.appendChild(component);
+  });
 });
 
 ReactDOM.render(<App />, document.getElementById('root'));
